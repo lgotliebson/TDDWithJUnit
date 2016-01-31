@@ -55,11 +55,16 @@ public class Car {
 	}
 	
 	/**
-	 * Decelerates the car
+	 * Decelerates the car, checks for deceleration
+	 * below zero.
 	 * @param amount	The amount the car will decelerate
 	 */
 	public void decelerate(int amount){
+		if((speed - amount) <= 0){
+			speed = 0;
+		}else{
 			speed-= amount;
-		
-	}	
+		}	
+	}
+	
 }
