@@ -53,4 +53,13 @@ public class Car {
 		String tempString = "Color: " + this.color + ", Speed: " + this.speed;
 		return(tempString);
 	}
+	
+	/**
+	 * Decelerates the car
+	 * @param amount	The amount the car will decelerate
+	 */
+	public void decelerate(int amount){
+			speed-= amount;
+		
+	}	
 }
